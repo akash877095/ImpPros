@@ -1,0 +1,28 @@
+Set Up 
+git config --global user.name "akash877095"
+git config --global user.email "jadhav.akash8770@gmail.com"
+git config --list // To get the details
+_______________________________________________________________________________
+
+Clone the project and Check Status 
+git clone "Project Link" 
+git clone -b BranchName "Project Link" 
+git status // To check the status 
+
+Add & Commit 
+git add Filename or git add . (For All Files) 
+
+git commit -m "Initial Commit"
+
+To Check Hidden Folders
+ls -a // list all hidden folder
+_______________________________________________________________________________
+
+Untracked Files -> New files that git dosn't tracked yet.
+
+Modified Files -> Changed.
+
+Staged Files -> Files is ready to be Committed. ( git add . -> Staged )
+
+Unmodified -> Unchanged. ( When we commmit the file )
+________________________________________________________________________________
