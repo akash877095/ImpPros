@@ -1,21 +1,103 @@
+If we already have repo on git than we use Below CMDs to manage the Project
+
 Set Up 
 git config --global user.name "akash877095"
 git config --global user.email "jadhav.akash8770@gmail.com"
 git config --list // To get the details
+
 _______________________________________________________________________________
+
 
 Clone the project and Check Status 
 git clone "Project Link" 
 git clone -b BranchName "Project Link" 
 git status // To check the status 
 
+git log // To Check All Commits list 
+
 Add & Commit 
 git add Filename or git add . (For All Files) 
 
-git commit -m "Initial Commit"
+git commit -m "Initial Commit" 
 
-To Check Hidden Folders
-ls -a // list all hidden folder
+
+Pushing the code from Local Repo to Remote Repo
+
+git push origin main
+
+git push -> For pushing code 
+origin -> By Default Git Repo Name 
+main -> Branch Name 
+
+To Check Hidden Folders 
+ls -hidden // list all hidden folder 
+
+_______________________________________________________________________________
+
+If we have Project in a  System and want to upload it to github than we need below cmds
+
+1. git init -> Create new git repo.
+   Than create a repo on github without README.md file
+
+2. git remote add origin "link"
+3. git remote -v ( To Verify Remote )
+4. git branch -> To check branch
+5. git branch -M NewBranchName (To Rename Branch)
+
+Push To Master / Main Branch
+
+To set upstream 
+git push -u origin main // It set the Upstream and after that 
+git push 
+
+_______________________________________________________________________________
+
+
+Branch Commands
+
+git branch -> To check Branches
+
+git branch -M <New Branch Name> -> To rename the current Branch 
+
+git checkout -> Switch To Another Branch
+
+git checkout -b -> Create New Branch 
+
+git checkout -d -> Delete the Branch
+
+_______________________________________________________________________________
+
+
+Merging Code and check Difference b/w Current Branch & Merging Branch
+
+Way 1
+git diff ( branch To Merge ) 
+git merge main (Branch Name)
+
+Way 2
+Create PR From Feature Branch to main Branch and Merge That
+
+_______________________________________________________________________________
+
+
+Want to get Remote Code Into Our Machine
+
+git pull origin main
+
+_______________________________________________________________________________
+
+Undo Add Commit Changes 
+
+Case 1-> staged Files (add .) 
+git reset <Filename> 
+git reset 
+
+Case 2 -> After Committed ( git commit )
+git reset HEAD~1 ( 1 Commit Back )
+
+Case 3 -> If you want to undo Multiple Commits
+git reset 
+
 _______________________________________________________________________________
 
 Untracked Files -> New files that git dosn't tracked yet.
@@ -25,4 +107,13 @@ Modified Files -> Changed.
 Staged Files -> Files is ready to be Committed. ( git add . -> Staged )
 
 Unmodified -> Unchanged. ( When we commmit the file )
+
 ________________________________________________________________________________
+
+5 Github Hacks 
+
+1. Shift + ? For opening Shortcut.
+2. github Shorten Link = git.io.
+3. Click on Lines of code which you want to HightLight.
+4. Blame -> To compare Old & New Code 
+5. 
