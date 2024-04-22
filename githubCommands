@@ -110,6 +110,10 @@ Unmodified -> Unchanged. ( When we commmit the file )
 
 ________________________________________________________________________________
 
+Access To Private repo
+git clone https://<username_or_oauth2>:<your_token>@github.com/<owner>/<repository_name>.git
+
+
 5 Github Hacks 
 
 1. Shift + ? For opening Shortcut.
